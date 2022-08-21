@@ -14,6 +14,7 @@ import os
 import environ
 from pathlib import Path
 
+
 env = environ.Env(
     DEBUG=(bool, False)
 )
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'aueb_exams',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

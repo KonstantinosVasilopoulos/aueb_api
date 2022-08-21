@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Exam(models.Model):
     """ Class representing a single examination date. """
     id = models.AutoField(primary_key=True, verbose_name='id', db_column='ex_id')
