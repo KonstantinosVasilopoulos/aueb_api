@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'aueb_exams',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -139,10 +140,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Django REST framework configuration
 REST_FRAMEWORK = {
-    'DEFAULT_THROTTLE_CLASSES': [
-        'rest_framework.throttling.AnonRateThrottle',
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
     ],
-    'DEFAULT_THROTTLE_RATES': {
-        'anon': '100/hour',
-    }
+    'DEFAULT_PERMISSION_CLASSES':(
+        'rest_framework.permissions.IsAuthenticated',
+    ),
 }
