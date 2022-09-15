@@ -20,11 +20,11 @@ Providing a secure and easy way to query the Athens University of Economics and 
 
 Exam model endpoints
 
-* /api/exams/
-* /api/exams/?date=\<date\> : *date* is a "DDMMYYYY" string
-* /api/exams/?department=\<department\> : *department* is a string
-* /api/exams/?professor=\<professor\> : *professor* is a string
-* /api/exams/?course=\<course\> : *course* is a string
+* /api/exams
+* /api/exams?date=\<date\> : *date* is a "DDMMYYYY" string
+* /api/exams?department=\<department\> : *department* is a string
+* /api/exams?professor=\<professor\> : *professor* is a string
+* /api/exams?course=\<course\> : *course* is a string
 * Plus all possible combinations of the above query parameters.
 
 ## Services provided
