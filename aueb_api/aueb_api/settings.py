@@ -151,3 +151,6 @@ REST_FRAMEWORK = {
 
 # Request logger file
 LOGFILE_PATH = os.path.join(BASE_DIR, 'logfile.txt')
+
+# Stress test API token
+STRESS_TEST_TOKEN = env('STRESS_TEST_TOKEN')
